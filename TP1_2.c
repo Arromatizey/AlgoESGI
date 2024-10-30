@@ -7,6 +7,13 @@ int sum_recursive(int arr[], int n) {
     return arr[n - 1] + sum_recursive(arr, n - 1);
 }
 
+int sum(int arr[], int n){
+    int res = 0;
+    for(int i =0; i < n; i++){
+        res += arr[i];
+    }
+}
+
 int main() {
     int array[] = {1, 2, 3, 4, 5, 6, 7};
     int size = sizeof(array) / sizeof(array[0]);
