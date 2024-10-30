@@ -21,3 +21,5 @@ int main() {
     printf("Sum of elements: %d\n", sum_recursive(array, size));
     return 0;
 }
+
+//complexity O(n)
