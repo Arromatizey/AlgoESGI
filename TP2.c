@@ -1,12 +1,21 @@
 #include <stdio.h>
 
 //complexity O(n)
-int factoriel(int n) {
+int factoriel_rec(int n) {
     if (n <= 1) {
         return 1;
     } else {
         return n * factoriel(n - 1);
     }
+}
+
+//complexity O(n)
+int factorial(int n) {
+    int result = 1;
+    for (int i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
 }
 
 // Fonction récursive pour calculer la somme des éléments d'un tableau
@@ -37,7 +46,7 @@ int rechercheBinaireRec(int tableau[], int debut, int fin, int element) {
 
 int main() {
     int nombre = 5;
-    printf("Factoriel de %d: %d\n", nombre, factoriel(nombre));
+    printf("Factoriel de %d: %d\n", nombre, factoriel_rec(nombre));
 
     // Test de la somme des éléments récursive
     int tableau[] = {1, 2, 3, 4, 5};
