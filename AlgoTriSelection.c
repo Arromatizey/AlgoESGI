@@ -8,7 +8,7 @@ void swap(int *xp, int *yp) {
 }
 
 // Fonction pour réaliser le tri par sélection
-// complexity O(n^2)
+// Complexity O(n^2)
 void selectionSort(int arr[], int n) {
     int i, j, min_idx;
   
