@@ -8,6 +8,7 @@ void swap(int *xp, int *yp) {
 }
 
 // Fonction pour effectuer le tri à bulles
+// Complexity O(n^2)
 void bubbleSort(int arr[], int n) {
     int i, j;
     int swapped;
