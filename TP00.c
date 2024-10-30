@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//complexity O(n)
 int find_max(int arr[], int n) {
     int max_value = arr[0];
     for (int i = 1; i < n; i++) {
@@ -10,14 +11,7 @@ int find_max(int arr[], int n) {
     return max_value;
 }
 
-int factorial(int n) {
-    int result = 1;
-    for (int i = 1; i <= n; i++) {
-        result *= i;
-    }
-    return result;
-}
-
+//complexity O(n)
 void reverse_string(char str[]) {
     int n = strlen(str);
     for (int i = 0; i < n / 2; i++) {
