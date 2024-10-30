@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//complexity O(n)
 int factoriel(int n) {
     if (n <= 1) {
         return 1;
@@ -9,6 +10,7 @@ int factoriel(int n) {
 }
 
 // Fonction récursive pour calculer la somme des éléments d'un tableau
+//complexity O(n)
 int sommeElementsRec(int tableau[], int taille) {
     if (taille <= 0) {
         return 0;
@@ -18,6 +20,7 @@ int sommeElementsRec(int tableau[], int taille) {
 }
 
 // Recherche binaire récursive
+//complexity O(log(n))
 int rechercheBinaireRec(int tableau[], int debut, int fin, int element) {
     if (debut > fin) {
         return -1; // Retourne -1 si l'élément n'est pas trouvé
